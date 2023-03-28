@@ -1,9 +1,30 @@
+.page {
+  background: linear-gradient(90deg, rgba(252,216,232,1) 0%, rgba(192,210,231,1) 100%);  
+
+  &__header {
+    height: 30px;
+    align-items: center;
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: #DED5E8;
+  }
+
+  &__header-title {
+    margin-left: 1.5rem;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+  }
+
+  &__header-image {
+    height: 75%;
+  }
+}
+
 .overview {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
-  background: linear-gradient(90deg, rgba(252,216,232,1) 0%, rgba(192,210,231,1) 100%);  
+  padding: 2rem 5rem;
 
   &__header {
     font-family: Gurmukhi MN;
@@ -44,13 +65,13 @@
   }
 
   &__text {
-    font-family: 'Reenie Beanie';
+    font-family: 'Reenie Beanie', cursive;
     font-size: 3rem;
   }
 }
 
 .order-button {
-  background-color: #fee6e3;
+  background-color: #deadc2;
   border: 2px solid #111;
   border-radius: 0.4rem;
   cursor: pointer;
@@ -58,6 +79,7 @@
   box-shadow: 7px 8px 0 rgba(0, 0, 0, 0.96);
   transition: box-shadow 0.3s;
   padding: 1rem 4rem;
+  font-family: 'Gurmukhi MN';
 }
 
 .order-button:hover {

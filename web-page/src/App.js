@@ -1,22 +1,16 @@
 import React from 'react';
 import './less/App.less';
-import ProductList from './ProductList';
-
-const products = [
-  { imageSrc: './product-images/dino1.png', price: 19.99 },
-  { imageSrc: './product-images/rat1.png', price: 29.99 },
-  { imageSrc: './product-images/dino2.png', price: 39.99 },
-  { imageSrc: './product-images/rat2.png', price: 49.99 },
-  { imageSrc: './product-images/dino1.png', price: 59.99 },
-];
+import Overview from './Overview';
 
 const App = () => {
   return (
-    <div className='overview'>
-      <span className='overview__header'>Products</span>
-      <ProductList products={products} />
+    <div className='page'>
+      <div className='page__header'>
+        <img src={require('./icon.png')} alt='Icon' className='page__header-image'></img>
+        <span className='page__header-title'>shirotriestocrochet</span>
+      </div>
+      <Overview/>
     </div>
-    
   );
 };
 

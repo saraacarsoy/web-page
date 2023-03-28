@@ -3,9 +3,9 @@ import React from 'react';
 const Product = ({ imageSrc, price }) => {
   return (
    <div className='product'>
-      <img src={require(`${imageSrc}`)} alt="Product" width='100%'/>
-      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>     
-        <p style={{ fontFamily: 'Reenie Beanie' }}>Price: ${price}</p>
+      <img src={require(`${imageSrc}`)} alt="Product" className='product__image'/>
+      <div className='product__details'>     
+        <span className='product__text'>Price: {price} kr</span>
         <button className='order-button'>Details</button>
       </div>
 

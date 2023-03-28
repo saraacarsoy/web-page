@@ -1,4 +1,5 @@
 import React from 'react';
+import './less/App.less';
 import ProductList from './ProductList';
 
 const products = [
@@ -12,7 +13,7 @@ const products = [
 const App = () => {
   return (
     <div className='overview'>
-      <h1>Products</h1>
+      <span className='overview__header'>Products</span>
       <ProductList products={products} />
     </div>
     

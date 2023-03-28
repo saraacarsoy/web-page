@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.less';
+import './less/index.less';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

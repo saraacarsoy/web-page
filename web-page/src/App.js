@@ -10,6 +10,7 @@ const App = () => {
         <span className='page__header-title'>shirotriestocrochet</span>
       </div>
       <Overview/>
+      <span className='page__header-title'>*It is possible that there will be differences from product to product. Mom says: "Handcrafted goods cannot be free from flaws."</span>
     </div>
   );
 };

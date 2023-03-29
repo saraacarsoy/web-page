@@ -1,11 +1,14 @@
 import React from 'react';
 import Product from './Product';
+import Divider from './Divider';
 
 const ProductList = ({ products }) => {
   return (
     <div className='product-list'>
       {products.map((product, index) => (
-        <Product key={index} imageSrc={product.imageSrc} price={product.price} />
+        <div>
+          <Product key={index} product={product} />
+        </div>
       ))}
     </div>
   );

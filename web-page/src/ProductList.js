@@ -1,6 +1,5 @@
 import React from 'react';
 import Product from './Product';
-import Divider from './Divider';
 
 const ProductList = ({ products }) => {
   return (
